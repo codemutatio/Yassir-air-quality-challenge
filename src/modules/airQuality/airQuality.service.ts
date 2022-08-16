@@ -77,14 +77,11 @@ export class AirQualityService {
 			};
 		}
 
-		throw new HttpException(
-			{
-				result: {
-					pollution: {},
-				},
+		return  {
+			result: {
+				pollution: {},
 			},
-			HttpStatus.NO_CONTENT,
-		);
+		};
 	}
 
 	async getMostPollutedTimeFrame() {
@@ -104,12 +101,9 @@ export class AirQualityService {
 			return { dateAndTime: dayjs(ts).format('lll'), id };
 		}
 
-		throw new HttpException(
-			{
-				dateAndTime: '',
-				id: '',
-			},
-			HttpStatus.NO_CONTENT,
-		);
+		return {
+			dateAndTime: '',
+			id: '',
+		};
 	}
 }
