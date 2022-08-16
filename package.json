@@ -1,8 +1,8 @@
 {
   "name": "yassir-air-quality-challenge",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Repo contains the code for the yassir air-quality  node challenge",
+  "author": "Faith Omojola",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
